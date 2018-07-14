@@ -10,7 +10,7 @@ import 'preact-material-components/Dialog/style.css';
 import 'preact-material-components/Drawer/style.css';
 import 'preact-material-components/List/style.css';
 import 'preact-material-components/TopAppBar/style.css';
-// import style from './style';
+import style from './style.css';
 
 export default class Header extends Component {
 	closeDrawer() {
@@ -33,13 +33,20 @@ export default class Header extends Component {
 	render() {
 		return (
 			<div>
-				<TopAppBar className="mdc-top-app-bar mdc-top-app-bar--fixed">
+				<TopAppBar class={style.top_app_bar} fixed>
 					<TopAppBar.Row>
 						<TopAppBar.Section>
-							<TopAppBar.Icon menu onClick={this.openDrawer}>
+							<TopAppBar.Icon menu onClick={this.openDrawer} className={style.top_app_bar_menu}>
 								menu
 							</TopAppBar.Icon>
-							<TopAppBar.Title>GDG Korea</TopAppBar.Title>
+							<TopAppBar.Title class={style.top_app_bar_title}>
+								<span>GDG Korea</span>
+							</TopAppBar.Title>
+						</TopAppBar.Section>
+						<TopAppBar.Section class={style.top_app_bar_sign_in}>
+							<div class={style.sign_in}>
+								Sign In
+							</div>
 						</TopAppBar.Section>
 					</TopAppBar.Row>
 				</TopAppBar>

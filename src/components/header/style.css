@@ -1,0 +1,36 @@
+.top_app_bar {
+  color: black;
+  background-color: white;
+}
+
+.top_app_bar_menu {
+  position: relative;
+  z-index: 10;
+  padding: 15px;
+}
+
+.top_app_bar_sign_in {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sign_in {
+  color: #2a45d8;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 8px;
+}
+
+@media (max-width: 768px) {
+  .top_app_bar_title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
