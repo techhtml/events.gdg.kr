@@ -37,6 +37,7 @@
 .schedule_time span {
   margin-left: 4px;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .schedule_events {
@@ -53,7 +54,13 @@
   padding: 20px 35px;
   border-left: 1px solid #ededed;
   box-sizing: border-box;
+  cursor: pointer;
 }
+
+.schedule_event:hover {
+  background-color: #fafafa;
+}
+
 .schedule_event_details {
   display: flex;
   flex-flow: column;
@@ -64,7 +71,7 @@
 .schedule_event_title {
   font-size: 19px;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 500;
   color: #4a4a4a;
   margin: 0;
 }
@@ -96,4 +103,35 @@
   display: inline-block;
   border-radius: 50%;
   margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .schedule_time {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4768fd;
+    padding: 16px 0;
+    text-align: center;
+    flex-basis: 66px;
+  }
+  .schedule_time span {
+    display: block;
+    margin: 0;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .schedule_events {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .schedule_event {
+    border-left: none;
+    padding: 16px 10px 16px 20px;
+    width: 100%;
+    min-height: auto;
+  }
+  .schedule_event_title {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

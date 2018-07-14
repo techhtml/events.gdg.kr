@@ -1,8 +1,8 @@
 export default {
   schedule: [
     {
-      startTime: "08:00",
-      endTime: "08:20",
+      startTime: "8:00",
+      endTime: "8:20",
       ampm: "pm",
       sessions: [
         {
@@ -14,8 +14,8 @@ export default {
       ]
     },
     {
-      startTime: "08:20",
-      endTime: "08:25",
+      startTime: "8:20",
+      endTime: "8:25",
       ampm: "pm",
       sessions: [
         {
@@ -27,8 +27,8 @@ export default {
       ]
     },
     {
-      startTime: "08:25",
-      endTime: "08:55",
+      startTime: "8:25",
+      endTime: "8:55",
       ampm: "pm",
       sessions: [
         {
@@ -40,8 +40,8 @@ export default {
       ]
     },
     {
-      startTime: "09:05",
-      endTime: "09:35",
+      startTime: "9:05",
+      endTime: "9:35",
       ampm: "pm",
       sessions: [
         {
@@ -53,7 +53,7 @@ export default {
       ]
     },
     {
-      startTime: "09:45",
+      startTime: "9:45",
       endTime: "10:15",
       ampm: "pm",
       sessions: [

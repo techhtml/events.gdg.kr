@@ -8,6 +8,11 @@ export default class Schedule extends Component {
       <div>
         <div class={style.hero}>
           <h2 class={style.hero_title}>Schedule</h2>
+          <p class={style.hero_description}>
+          국내 웹 개발자들이 서로 어울릴 수 있는 장을 제공하고,
+          Chrome을 비롯한 구글 웹 플랫폼 전략 및 최신 기술을 공유하는 장을 제공하고자 합니다.
+          GDG Korea WebTech는 이번 밋업을 시작으로 정기적인 밋업을 개최할 예정입니다.
+          </p>
         </div>
         <div class={style.schedule}>
           {schedules.schedule.map(item => (
