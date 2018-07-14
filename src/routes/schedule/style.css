@@ -1,0 +1,99 @@
+.hero {
+  padding: 100px 60px 60px;
+  position: relative;
+  max-width: 620px;
+  width: 80%;
+}
+
+.hero .hero_title {
+  margin: 6px 6px 24px 0;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.schedule {
+  color: #202124;
+}
+
+.schedule_section {
+  border-top: 1px solid #ededed;
+}
+
+.schedule_section:last-of-type {
+  border-bottom: 1px solid #ededed;
+}
+
+.schedule_content {
+  display: flex;
+}
+
+.schedule_time {
+  padding: 30px 0 30px 60px;
+  flex-basis: 200px;
+  font-size: 34px;
+  color: #202124;
+}
+
+.schedule_time span {
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.schedule_events {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.schedule_event {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-height: 100%;
+  padding: 20px 35px;
+  border-left: 1px solid #ededed;
+  box-sizing: border-box;
+}
+.schedule_event_details {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+.schedule_event_title {
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.schedule_event_meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.schedule_event_description {
+  margin: 4px 28px 6px 0;
+}
+
+.schedule_event_topic {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.schedule_event_topic::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #202124;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 6px;
+}
