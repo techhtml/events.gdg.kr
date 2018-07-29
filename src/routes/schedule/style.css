@@ -109,6 +109,35 @@
   margin-right: 6px;
 }
 
+.schedule_loading {
+  display: flex;
+  border-top: 1px solid #ededed;
+}
+.schedule_loading:last-of-type {
+  border-bottom: 1px solid #ededed;
+}
+.schedule_loading_time {
+  margin: 30px 0 30px 60px;
+  background: #bababa;
+  flex-basis: 140px;
+}
+.schedule_loading_content {
+  margin: 20px 35px;
+  align-items: center;
+  flex: 1;
+}
+.schedule_loading_title {
+  width: 60%;
+  height: 26px;
+  background: #bababa;
+}
+.shcedule_loading_description {
+  width: 40%;
+  height: 18px;
+  margin-top: 8px;
+  background: #bababa;
+}
+
 @media (max-width: 768px) {
   .hero {
     display: none;
@@ -142,3 +171,4 @@
     line-height: 20px;
   }
 }
+
