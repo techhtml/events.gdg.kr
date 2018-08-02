@@ -1,0 +1,40 @@
+.card_collection {
+  display: flex;
+  padding: 0 60px;
+  margin: auto;
+}
+.card {
+  width: 90%;
+  max-width: 400px;
+  margin: 16px 0;
+}
+.card + .card {
+  margin-left: 16px;
+}
+.card_header {
+  padding: 8px 16px;
+}
+.card_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .card_collection {
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+  }
+  .card {
+    max-width: initial;
+    width: 100%;
+  }
+  .card + .card {
+    margin: 0;
+  }
+}

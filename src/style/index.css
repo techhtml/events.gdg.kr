@@ -52,3 +52,7 @@ html, body {
 .mdc-theme--dark .mdc-card {
   color: #444;
 }
+
+.mdc-text-field__input {
+  height: auto !important;
+}

@@ -1,0 +1,15 @@
+.form {
+  padding: 60px;
+  max-width: 620px;
+  width: 80%;
+}
+
+.form_title {
+  margin:6px 6px 24px 0;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.form_description {
+  line-height: 160%;
+}

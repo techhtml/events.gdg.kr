@@ -2,11 +2,16 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import Header from './header';
-import Home from '../routes/home';
+// Event 메인 바뀌면 변경
+import Home from '../routes/ChromeDevMeetup';
+
 import Schedule from '../routes/schedule';
+import Admin from '../routes/admin';
 
 import style from './style.css'
-import firebase from 'firebase';
+import firebase from '@firebase/app';
+import '@firebase/firestore'
+
 import config from './config';
 
 firebase.initializeApp(config);
@@ -24,9 +29,7 @@ export default class App extends Component {
 				<Header />
 				<div class={style.main}>
 					<Router onChange={this.handleRoute}>
-						<Home path="/" />
-						<Schedule path='/schedule/' db={db} />
-						<Schedule path='/schedule/:id' />
+						<Home path="/" db={db} />
 					</Router>
 				</div>
 			</div>

@@ -17,6 +17,7 @@ export default class Header extends Component {
 
 	drawerRef = drawer => (this.drawer = drawer);
 	dialogRef = dialog => (this.dialog = dialog);
+	moveToRegist = () => {location.href="https://naver.com"}
 
 	linkTo = path => () => {
 		route(path);
@@ -32,16 +33,13 @@ export default class Header extends Component {
 				<TopAppBar class={style.top_app_bar} fixed>
 					<TopAppBar.Row>
 						<TopAppBar.Section>
-							<TopAppBar.Icon menu onClick={this.openDrawer} className={style.top_app_bar_menu}>
-								menu
-							</TopAppBar.Icon>
 							<TopAppBar.Title class={style.top_app_bar_title}>
-								<span>GDG Korea</span>
+								<span>GDG Korea WebTech</span>
 							</TopAppBar.Title>
 						</TopAppBar.Section>
-						<TopAppBar.Section class={style.top_app_bar_sign_in}>
+						<TopAppBar.Section class={style.top_app_bar_sign_in} onClick={this.moveToRegist}>
 							<div class={style.sign_in}>
-								Sign In
+								등록하기
 							</div>
 						</TopAppBar.Section>
 					</TopAppBar.Row>
